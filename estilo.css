@@ -1,0 +1,7 @@
+:root{color-scheme:light dark;--fondo:#f6f8fb;--texto:#1b2430;--suave:#5a6676;--acento:#1d4e89;--caja:#fff}
+@media (prefers-color-scheme:dark){:root{--fondo:#11161d;--texto:#e7ecf2;--suave:#a3afbd;--acento:#7fb2ff;--caja:#1a212b}}
+body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.6 system-ui,sans-serif}
+main{max-width:720px;margin:0 auto;padding:32px 16px}
+h1{font-size:1.6rem;margin:0 0 8px}a{color:var(--acento)}small{color:var(--suave)}
+.caja{background:var(--caja);border-radius:12px;padding:20px;margin:20px 0;word-break:break-all}
+code{font-size:1.25rem}

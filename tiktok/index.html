@@ -1,0 +1,8 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autorización de TikTok</title><link rel="stylesheet" href="/estilo.css"></head>
+<body><main><h1>Autorización de TikTok</h1><div id="r" class="caja">Cargando…</div>
+<script>
+var p=new URLSearchParams(location.search),c=p.get("code"),e=p.get("error"),s=p.get("state")||"",r=document.getElementById("r");
+if(c){r.innerHTML="<p>✅ Cuenta autorizada. Copia este código de un solo uso (caduca en pocos minutos) y pégalo en el chat:</p><p><code></code></p>";r.querySelector("code").textContent=s+" "+c;}
+else if(e){r.textContent="❌ No se ha autorizado: "+e+" "+(p.get("error_description")||"");}
+else{r.textContent="Esta página solo sirve para recibir la autorización de TikTok.";}
+</script></main></body></html>
